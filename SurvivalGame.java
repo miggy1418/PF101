@@ -38,7 +38,16 @@ public class SurvivalGame {
         while (health > 0) {
 
             dayCount++;
-
+            
+            if (dayCount == 8) {
+            System.out.println("\n==============================");
+            System.out.println("           YOU WIN!");
+            System.out.println("==============================");
+            System.out.println("Rescue has arrived!");
+            System.out.println("You survived for 7 days.");
+            break;
+        }
+            
             System.out.println("\n==============================");
             System.out.println("           DAY " + dayCount);
             System.out.println("==============================");
